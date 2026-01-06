@@ -30,5 +30,8 @@ if __name__ == '__main__':
     main()
 ```
 
-- under the ```main()``` function, achieve the following: 1), prompt for username. 2), if the username entered is "admin", print "Hello admin, you are logged in as admin" and exit. if the username entered is "student1" or "student2", print "Hello [name], you are logged in as a student" and exit. 3), if the username is not in #1) and #2), print "sorry, wrong username entered" and prompt for username.
+- under the ```main()``` function, achieve the following:
+    - 1), prompt for username.
+    - 2), if the username entered is "admin", print "Hello admin, you are logged in as admin" and exit. if the username entered is "student1" or "student2", print "Hello [name], you are logged in as a student" and exit.
+    - 3), if the username is not in #1) and #2), print "sorry, wrong username entered" and prompt for username.
 
