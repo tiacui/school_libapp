@@ -19,6 +19,13 @@ Task 1:
 
 - create a folder ```library_project``` under home directory ```C:\Users\xinyo\```, for example, ```C:\Users\xinyo\library_project```			[comment: all future work will be saved here]
 
-- under "library_project", create a python script like ```school_libapp.py```								# this will be the main program library admins and students use
+- under "library_project", create a python script like ```school_libapp.py```								[comment: this will be the main program library admins and students use]
 
-- in "school_lib_app.py", 
+- in "school_lib_app.py", create the scripts in the following structure:
+```
+def main():
+    ...
+
+if __name__ == '__main__':
+    main()
+```
