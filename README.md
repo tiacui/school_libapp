@@ -51,3 +51,25 @@ Task 2: the app should read username/password from file ```config\credentials.tx
   - open the file ```config\credentials.txt```, read each line of it, use function ```split()``` to split with ```:```, so you obtain the username and corresponding password in a line in ```config\credentials.txt```
   - if the username/password matches the username/password a user provided, authentication is successful, continue to the section "Hello ***, you are logged in as ***"
   - if the username/password a user provided failed to match any of the lines in ```config\credentials.txt```, authentication fails, and prompt the user to login again.
+
+Key points:
+- read lines from a file
+  - can use ```with open(filename, 'r') as f:```;
+  - or can use ```f = open(filename, 'r'); ...; f.close()```
+  - functions like ```readlines()``` can be used to read from files
+  - new line characters like ```\n``` needs to be striped 
+
+ =================================
+
+ Task 3: write login (successful, failed) events to logs
+
+ - create a folder ```logs``` under ```C:\Users\xinyo\library_project```, i.e.```C:\Users\xinyo\library_project\logs```                     [comment: log files will be saved here]
+ - create a new function like ```write_logins()``` to do the following:
+   - 2026-01-08T12:01:01Z username success|failed
+ - update the ```student_login()```, to make it call ```write_logins()``` to write an event to the log files everytime a login is attempted
+
+ Key points:
+ - writing lines to a file
+ - timestamps, UTC and timezone
+
+
