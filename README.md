@@ -1,6 +1,16 @@
 # school_libapp
 learning Python
 
+git commands
+=================================
+1, each day, before starting to work on the code, under ```C:\Users\xinyo\library_project```:
+- run command ```git pull``` to sync the remote files from ```https://github.com/tiacui/school_libapp```
+
+2, each day, when finishing the work, under ```C:\Users\xinyo\library_project```, run the commands:
+- ```git add .``` to add all changes
+- ```git commit -m "xxx"``` to commit the updates
+- ```git push``` to push the code to the remote repo, ```https://github.com/tiacui/school_libapp```
+
 
 Library Book Management System
 =================================
