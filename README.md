@@ -82,4 +82,29 @@ Key points:
  - writing lines to a file
  - timestamps, UTC and timezone
 
+=================================
 
+Task 4: create menus
+
+- Admin:
+  - list all books (shared?)
+  - add books (name, author, number)
+  - remove books
+  - ...
+ 
+- Student:
+  - list all books
+  - borrow a book
+  - return a book
+
+=================================
+
+Task 5: create functions
+
+# create a new file, library.py, easier for tests
+
+- Class Library:
+  - property: Name, books[]
+  - function: load_data
+  - function: save_data
+  - functions: borrow_book, return_book, add_book, list_books
