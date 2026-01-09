@@ -1,3 +1,19 @@
+import datetime
+
+
+
+
+
+
+
+def log(name, result):
+    with open("log/log.txt", "a") as logfile:
+        cur_time = datetime.datetime.now(datetime.UTC).strftime('%Y-%m-%dT%H:%M:%SZ')
+        logfile.write(cur_time + " " + name + " " + result + "\n")
+
+
+
+
 def userlogin():
     file = "config/credentials.txt"
     
@@ -16,7 +32,11 @@ def userlogin():
 
                 if username == username123 and password == password123:
                     print("login successful")
+                    log(username, "success")
                     return username
+        log(username, "fail1")
+    
+              
 
 
 user = userlogin()
