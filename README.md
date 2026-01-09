@@ -84,7 +84,7 @@ Key points:
 
 =================================
 
-Task 4: create menus
+Task 4: create menus. After a user logged in successfully, he/she should see a menu with the following features:
 
 - Admin:
   - list all books (shared?)
@@ -97,12 +97,13 @@ Task 4: create menus
   - borrow a book
   - return a book
 
+for now, e.g. if 1) is selected, print "listing all books here"; if 2) is selected, print "add books here...", etc.
+
 =================================
 
 Task 5: create functions
 
-# create a new file, library.py, easier for tests
-
+- create a new file, library.py, easier for tests
 - Class Library:
   - property: Name, books[]
   - function: load_data
