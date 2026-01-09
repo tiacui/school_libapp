@@ -99,12 +99,31 @@ Task 4: create menus. After a user logged in successfully, he/she should see a m
 
 for now, e.g. if 1) is selected, print "listing all books here"; if 2) is selected, print "add books here...", etc.
 
+- learning (for task 5):
+  - json (will be used to store books data in task 5)
+    - https://www.w3schools.com/python/python_json.asp
+  - Class ()
+    - method "__init__(self)": https://www.w3schools.com/python/python_class_init.asp
+    - ```self``` Parameter: https://www.w3schools.com/python/python_class_self.asp
+
+
 =================================
 
 Task 5: create functions
 
-- create a new file, library.py, easier for tests
-- Class Library:
+- create a new file, school_library.py under ```C:\Users\xinyo\library_project```
+- use the following structure, easier for tests:
+  ```
+  class SchoolLibrary:
+      ...
+
+  def main():
+      ...
+
+  if __name__ == '__main__':
+      main()
+  ```
+- Class SchoolLibrary:
   - property: Name, books[]
   - function: load_data
   - function: save_data
