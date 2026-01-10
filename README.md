@@ -120,7 +120,7 @@ The Plan:
   ]
   ```
 
-- create a folder ```books``` under ```C:\Users\xinyo\library_project```, and a file ```books.json``` with content ```{"name": "book aaa", "author": "john", "pages": 123, "stock": 3}``` under ```C:\Users\xinyo\library_project\books```. this is where the books will be stored.
+- create a folder ```books``` under ```C:\Users\xinyo\library_project```, and a file ```books.json``` with content ```[{"name": "book aaa", "author": "john", "pages": 123, "stock": 3}]``` under ```C:\Users\xinyo\library_project\books```. this is where the books will be stored.
 - create a new file, ```school_library.py``` under ```C:\Users\xinyo\library_project```
 - use the following structure, easier for tests:
   ```
