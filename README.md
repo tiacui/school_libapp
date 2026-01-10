@@ -87,9 +87,8 @@ Key points:
 Task 4: create menus. After a user logged in successfully, he/she should see a menu with the following features:
 
 - Admin:
-  - list all books (shared?)
-  - add books (name, author, number)
-  - remove books
+  - list all books
+  - add books
   - ...
  
 - Student:
