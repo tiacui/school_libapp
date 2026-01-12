@@ -111,7 +111,7 @@ for now, e.g. if 1) is selected, print "listing all books here"; if 2) is select
 Task 5: create functions
 
 The Plan:
-- a book should have the following information: ```name, author, pages (int), numbers in stock (int)```
+- a book should have the following information: ```name, author, numbers in stock (int)```
 - book information can be stored in json file, with the following structure:
   ```
   [{"name": "book aaa", "author": "john", "pages": 123, "stock": 3},
@@ -120,7 +120,7 @@ The Plan:
   ]
   ```
 
-- create a folder ```books``` under ```C:\Users\xinyo\library_project```, and a file ```books.json``` with content ```[{"name": "book aaa", "author": "john", "pages": 123, "stock": 3}]``` under ```C:\Users\xinyo\library_project\books```. this is where the books will be stored.
+- create a folder ```books``` under ```C:\Users\xinyo\library_project```, and a file ```books.json``` with content ```[{"book_id":123456, "name": "book aaa", "author": "john", "pages": 123, "stock": 3}]``` under ```C:\Users\xinyo\library_project\books```. this is where the books will be stored.
 - create a new file, ```school_library.py``` under ```C:\Users\xinyo\library_project```
 - use the following structure, easier for tests:
   ```
@@ -137,4 +137,16 @@ The Plan:
   - property: ```name``` (of library), ```books[]``` (available in the library)
   - function: ```load_data``` (to read the list of books from the json file)
   - function: ```save_data``` (to save the list of books to the json file)
-  - functions: borrow_book, return_book, add_book, list_books
+
+=================================
+Task 6: create functions
+  - continue to create functions(methods) under Class ```SchoolLibrary```:
+    - add_book:
+      - parameters: ```name, author, numbers in stock (int)```
+      - the app should generate a random int (6 digits) for ```book_id``` with module ```random.randint()```
+    - borrow_book
+      - use ```book_id``` as parameter
+    - return_book
+      - use ```book_id``` as parameter
+    - list_books:
+      - just display all fields of all books: ```book_id, name, author, stock```
