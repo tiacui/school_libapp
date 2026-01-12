@@ -139,7 +139,10 @@ The Plan:
   - function: ```save_data``` (to save the list of books to the json file)
 
 =================================
+
+
 Task 6: create functions
+
   - continue to create functions(methods) under Class ```SchoolLibrary```:
     - add_book:
       - parameters: ```name, author, numbers in stock (int)```
