@@ -1,7 +1,8 @@
 import sys
 import datetime
 import json
-from school_library import SchoolLibrary
+#from school_library import SchoolLibrary
+import school_library
 
 
 
@@ -47,7 +48,7 @@ def userlogin():
 
 user = userlogin()
 print("you are: ", user)
-car_library = SchoolLibrary("caringbah")
+car_library = school_library.SchoolLibrary("caringbah")
 car_library.load_data()
 
 while True:
@@ -85,10 +86,10 @@ while True:
             car_library.list_books()
         elif select == "2":
             print("borrowing books here")
-            car_library.borrow_book()
+            car_library.borrow_book(input('book_id: '))
         elif select == "3":
             print("returning books here")
-            car_library.return_book()
+            car_library.return_book(input('book_id: '))
         elif select == "q":
             print("quit...")
             sys.exit()
