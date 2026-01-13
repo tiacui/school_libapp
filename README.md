@@ -153,3 +153,16 @@ Task 6: create functions
       - use ```book_id``` as parameter
     - list_books:
       - just display all fields of all books: ```book_id, name, author, stock```
+
+
+=================================
+
+
+Task 7: Optimize the menu and integrate the class/functions created
+
+  - There are some issues in the menu created in ```school_libapp.py``` needs to be fixed.
+    - When user is a student (under ```user == "student1" or "student2":```), there should be an option ```* q) quit```, so user can select ```q``` and quit.
+    - After a user makes a selection (say "borrow a book") and when it finishes, the app should return to the page displaying the Menu again, rather than just quit.
+      - Think about it: how to solve it?
+
+ - When the above issues solved, try to integrate the two scripts.
