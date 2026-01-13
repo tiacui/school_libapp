@@ -1,6 +1,7 @@
 import sys
 import datetime
 import json
+from school_library import SchoolLibrary
 
 
 
@@ -46,40 +47,51 @@ def userlogin():
 
 user = userlogin()
 print("you are: ", user)
+car_library = SchoolLibrary("caringbah")
+car_library.load_data()
 
-if user == "admin":
-    print("\n\n***********************************")
-    print("* 1) list all books")
-    print("* 2) add books")
-    print("* 3) remove books")
-    print("* q) quit")
-    print("***********************************")
+while True:
+    if user == "admin":
+        print("\n\n***********************************")
+        print("* 1) list all books")
+        print("* 2) add books")
+        print("* 3) remove books")
+        print("* q) quit")
+        print("***********************************")
 
-    select = input("please select a number 1-3: ")
-    if select == "1":
-        print("listing all books here")
-    elif select == "2":
-        print("add books here")
-    elif select == "3":
-        print("remove books here")
-    elif select == "q":
-        print("quit...")
-        sys.exit()
-    else:
-        print("invalid number")
-elif user == "student1" or "student2":
-    print("***********************************")
-    print("* 1) list all books")
-    print("* 2) borrow a book")
-    print("* 3) return a book")
-    print("***********************************")
+        select = input("please select a number 1-3: ")
+        if select == "1":
+            print("listing all books here")
+            car_library.list_books()
+        elif select == "2":
+            print("add books here")
+            car_library.add_book()
+        elif select == "q":
+            print("quit...")
+            sys.exit()
+        else:
+            print("invalid number")
+    elif user == "student1" or "student2":
+        print("***********************************")
+        print("* 1) list all books")
+        print("* 2) borrow a book")
+        print("* 3) return a book")
+        print("* q) quit")
+        print("***********************************")
 
-    select = input("select a number 1-3:")
-    if select == "1":
-        print("listing all books here")
-    elif select == "2":
-        print("borrowing books here")
-    elif select == "3":
-        print("returning books here")
-    else:
-        print("invalid number")
+        select = input("select a number 1-3:")
+        if select == "1":
+            print("listing all books here")
+            car_library.list_books()
+        elif select == "2":
+            print("borrowing books here")
+            car_library.borrow_book()
+        elif select == "3":
+            print("returning books here")
+            car_library.return_book()
+        elif select == "q":
+            print("quit...")
+            sys.exit()
+        
+        else:
+            print("invalid number")
