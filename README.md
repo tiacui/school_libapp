@@ -166,3 +166,16 @@ Task 7: Optimize the menu and integrate the class/functions created
       - Think about it: how to solve it?
 
  - When the above issues solved, try to integrate the two scripts.
+
+=================================
+
+
+Task 8: create feature for logs searching
+
+- functions
+  - move the functions ```log(), userlogin()``` to file ```school_library.py```, and make the necessary changes to make it work
+  - change the main part of ```school_libapp.py``` to ```def main(): ...; if __name__ == '__main__'``` structure
+ 
+- the function ```log()``` currently is only used to log ```login``` events.
+  - make it log events of ```adding books, borrow and reburn books``` as well
+
