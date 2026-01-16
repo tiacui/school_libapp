@@ -92,3 +92,22 @@ class SchoolLibrary:
                 print("book returned successfully")
                 log(username, "book returned")
                 self.save_data()
+   
+    def view_logs(self):
+            user_target = input("enter username of the logs interested: ")
+            
+            with open("log/log.txt", "r") as logfile:
+                print("log results")
+                for line in logfile.readlines():
+                    line = line.strip()
+                    words = line.split()
+                    if user_target == "":
+                        print(line)
+                        print("--------------------------------")
+                    elif words[1] == user_target:
+                        print(line)
+                        print("--------------------------------")
+
+
+
+                

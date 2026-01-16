@@ -15,8 +15,9 @@ def main():
             print("\n\n***********************************")
             print("* 1) list all books")
             print("* 2) add books")
-            print("* 3) remove books")
+            print("* 3) view logs")
             print("* q) quit")
+
             print("***********************************")
 
             select = input("please select a number 1-3: ")
@@ -30,6 +31,10 @@ def main():
               
             elif select == "q":
                 print("quit...")
+            
+            elif select =="3":
+                print("logs: ")
+                car_library.view_logs()
               
                 sys.exit()
             else:
