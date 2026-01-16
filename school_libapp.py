@@ -31,12 +31,11 @@ def main():
               
             elif select == "q":
                 print("quit...")
-            
+                sys.exit()
             elif select =="3":
                 print("logs: ")
                 car_library.view_logs()
               
-                sys.exit()
             else:
                 print("invalid number")
         elif user == "student1" or user == "student2":
