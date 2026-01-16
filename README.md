@@ -179,3 +179,15 @@ Task 8: create feature for logs searching
 - the function ```log()``` currently is only used to log ```login``` events.
   - make it log events of ```adding books, borrow and reburn books``` as well
 
+
+=================================
+
+
+Task 9: admin viewing log files
+
+
+we already have logs in file ```log/log.txt```, there should be a better way library admin can view the log files
+- in the admin menu, create a new menu item ```view logs```, and achive the following:
+  - when the item is selected, prompt admin to enter username of the logs interested
+  - if he enters empty "", display all logs
+  - if he enters a username, like "admin", "student1", display the logs of that user.
