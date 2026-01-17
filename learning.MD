@@ -1,6 +1,6 @@
 1, for list below:
 ```
-items = ['pen', 'pencil', 'eraser'，'ink']
+items = ['pen', 'pencil', 'eraser', 'ink']
 ```
 1.0, How to get the number of items in items?
 
