@@ -1,33 +1,68 @@
-0, How to get the number of items in items?
+1, for list below:
 ```
-items = ['pen', 'pencil', 'eraser']
+items = ['pen', 'pencil', 'eraser'，'ink']
 ```
+1.0, How to get the number of items in items?
 
-1.0, How to change 80 to 85 in scores?
-```
-scores = [70, 80, 90, 100]
-```
 
-1.1), How to get only the first 3 elements (i.e. [10, 15, 20]) from data?
-```
-data = [5, 10, 15, 20, 25, 30]
-```
 
-1.2), How to get the value "d" from the list? use 2 methods.
+1.1, How to change 'pencil' to 'canyon'?
+
+
+
+1.2, How to get only the first 2 elements (i.e. ```['pen', 'pencil']```) from items?
+
+
+
+1.3, How to get the last value "ink" from the list? use 2 methods.
+
+
+
+1.4, how to append a value 'paper' to items?
+
+
+
+===================
+
+
+2, for dict below:
 ```
-letters = ['a', 'b', 'c', 'd']
+prices = {
+    "apple": 2,
+    "banana": 1,
+    "orange": 3
+}
 ```
+2.1, how to get the price of "orange"?
+
+
+2.2, How to enumerate the prices of all fruits, and print each in format "fruitname - $price", for example, "apple - $2". (can not hardcode fruit name in the code)
+
+
+2.3, how to get price of "orange"?
+
+
+2.4, how to add a fruit "grape" ($5) to the dict?
+
+
+2.5, How to get the size of the dict?
+
+
+========================
+
 
 1,  How to get the value 8?
 ```
-matrix = [
+x = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 ```
 
+
 2, How to get the value 30?
+
 ```
 data = [10, [20, 30], 40]
 ```
@@ -121,12 +156,3 @@ books = [
 ```
 
 
-12, How to print the prices of all fruits in format "fruitname - $price", for example, "apple - $2". but can not hardcode fruit name in the code.
-
-```
-prices = {
-    "apple": 2,
-    "banana": 1,
-    "orange": 3
-}
-```
