@@ -4,11 +4,6 @@ items = ['pen', 'pencil', 'eraser', 'ink']
 ```
 1.0, How to get the number of items in items?
 
-```
->>> items[2]
-'eraser'
-
-```
 
 1.1, How to change 'pencil' to 'canyon'?
 
