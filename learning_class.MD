@@ -9,6 +9,17 @@ bbb = "222"
 Task: add a few lines to the bottom of the code above, to add "aaa" and "bbb", and print the result, which should be "345" 
 
 
+
+```
+>>> aaa = "123"
+... bbb = "222"
+...
+>>> result = int(aaa) + int(bbb)
+>>>
+>>> print(result)
+345
+```
+
 2) concatenate number and string
 ```
 aaa = 'hello'
@@ -17,13 +28,23 @@ bbb = 123
 Task: add a few lines to the bottom of the code above, to concatenate "aaa" and "bbb", and print the result, which should be "hello123" 
 
 
+```
+>>> result = aaa + str(bbb)
+>>> print(result)
+123222
+```
 3) change to upper case
 ```
 aaa = 'hello123'
 ```
 Task: add a few lines to the bottom of the code above, to change aaa to upper case
 
-
+```
+>>> aaa = 'hello123'
+>>> result = aaa.upper()
+>>> print(result)
+HELLO123
+```
 4) change to upper case
 ```
 aaa = 'hello123'
@@ -31,6 +52,11 @@ aaa = 'hello123'
 Task: add a few lines to the bottom of the code above, to obtain the first 6 charactors of "aaa", which should be "hello1"
 
 
+```
+>>> result = aaa[:6]
+>>> print(result)
+hello1
+```
 Inheritance
 ====================
 Purpose: Code reuse
