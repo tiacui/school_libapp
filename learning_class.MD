@@ -1,3 +1,35 @@
+String
+====================
+
+1) add numbers
+```
+aaa = "123"
+bbb = "222"
+```
+Task: add a few lines to the bottom of the code above, to add "aaa" and "bbb", and print the result, which should be "345" 
+
+
+2) concatenate number and string
+```
+aaa = 'hello'
+bbb = 123
+```
+Task: add a few lines to the bottom of the code above, to concatenate "aaa" and "bbb", and print the result, which should be "hello123" 
+
+
+3) change to upper case
+```
+aaa = 'hello123'
+```
+Task: add a few lines to the bottom of the code above, to change aaa to upper case
+
+
+4) change to upper case
+```
+aaa = 'hello123'
+```
+Task: add a few lines to the bottom of the code above, to obtain the first 6 charactors of "aaa", which should be "hello1"
+
 
 Inheritance
 ====================
