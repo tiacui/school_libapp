@@ -48,6 +48,8 @@ make_sound(Cat())
 Encapsulation
 =================
 
+Encapsulation = hide how something works, expose only how to use it
+
 ```
 class BankAccount:
     def __init__(self):
@@ -65,4 +67,43 @@ print(acc.get_balance())
 
 ```
 try ```print(acc.__balance)``` instead of ```print(acc.get_balance())``` and see what happens.
+
+Example:
+
+The following will cause issues:
+```
+class BankAccount:
+    def __init__(self):
+        self.balance = 0
+
+    def get_balance(self):
+        print(f'your balance is: {self.balance}')
+
+acc = BankAccount()
+acc.balance = -1000   # invalid but allowed
+acc.get_balance()
+```
+
+the right way:
+
+```
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0
+
+    def deposit(self, amount):
+        if amount <= 0:
+            raise ValueError
+        self.__balance += amount
+ 
+    def get_balance(self):
+        print(f'your balance is: {self.balance}')
+
+
+acc = BankAccount()
+acc.deposit(-1000)
+acc.get_balance()
+```
+
+
 
