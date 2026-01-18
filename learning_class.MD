@@ -1,6 +1,8 @@
 
 Inheritance
 ====================
+Purpose: Code reuse
+
 
 ```
 class Animal:
@@ -20,6 +22,12 @@ d.bark()   # from "Dog"
 
 Polymorphism
 ===================
+The purpose of polymorphism in coding is to allow a single interface (like a method name) to represent different underlying actions or data types, enabling flexible, reusable, and maintainable code by treating diverse objects uniformly, reducing duplicate code, and simplifying complex logic, often through inheritance. It lets you write generic code that works with many object types, making your programs more scalable and easier to debug. 
+
+
+Example Analogy:
+
+Think of a "draw" command in a drawing application. You can tell any shape (Circle, Triangle, Square) to draw(), and each shape knows how to draw itself correctly, even though you use the same command for all of them. 
 
 ```
 class Dog:
