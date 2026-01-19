@@ -26,17 +26,17 @@ Task 1: create a simple html page for the login interface, which will have:
     - "login" button
     - Refer to:
     ```
-    <form>
-https://www.w3schools.com/html/html_forms.asp
-
-
-<form> "action" attribute:
-https://www.w3schools.com/html/html_forms_attributes.asp
-
-- use "https://example.com/login" for now (as a place holder)
-
-
-"<input>" and "<label>" Element
-https://www.w3schools.com/html/html_form_input_types.asp
-https://www.w3schools.com/html/html_form_input_types.asp
+    "form"
+    https://www.w3schools.com/html/html_forms.asp
+    
+    
+    "action" attribute of "Form":
+    https://www.w3schools.com/html/html_forms_attributes.asp
+    
+    - use "https://example.com/login" for now (as a place holder)
+    
+    
+    "input" and "label" Element
+    https://www.w3schools.com/html/html_form_input_types.asp
+    https://www.w3schools.com/html/html_form_input_types.asp
     ```
