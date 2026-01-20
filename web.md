@@ -40,3 +40,56 @@ Task 1: create a simple html page for the login interface, which will have:
     https://www.w3schools.com/html/html_form_input_types.asp
     https://www.w3schools.com/html/html_form_input_types.asp
     ```
+
+==============================
+Task 2: using CSS
+
+
+```
+ body {
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        /* styling for Menu bar */
+        .menu {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+        
+        /* styling for "Login window" */
+        .login {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 50px auto;
+            width: 300px;
+        }
+        
+        /* styling for Footer */
+        .footer {
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* styling for form "input" */
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+
+        /* styling for "login" button */
+        #login_button {
+            padding: 8px 15px;
+            background: #333;
+            color: white;
+            border: none;
+        }
+
+```
