@@ -104,4 +104,4 @@ Refer to ```https://www.w3schools.com/html/html_css.asp, https://www.w3schools.c
 - 5), in the new "<div>", create a table to show the following:
   - table field names "book_id", "name", "author", "stock"
   - a phseudo book as ```111111, hello book, john doe, 5``` (as a place holder)
--6), refer to the examples in ```https://www.w3schools.com/css/css_table.asp``` to make the table looks pretty.
+-6), refer to the examples in ```https://www.w3schools.com/css/css_table.asp```, using "inline CSS" to make the table looks pretty.
