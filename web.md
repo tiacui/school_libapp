@@ -42,8 +42,10 @@ Task 1: create a simple html page for the login interface, which will have:
     ```
 
 ==============================
-Task 2: using CSS
+Task 2: using CSS to make the "logins.html" interface looks better.
 
+- 1), using "inline CSS" to change the font color of Menu "home" to Green
+- 2), using the following code as "internal CSS" to make the page look better. make sure all the selectors are applied.
 
 ```
  body {
@@ -58,7 +60,7 @@ Task 2: using CSS
             padding: 10px;
         }
         
-        /* styling for "Login window" */
+        /* styling for "Login" div */
         .login {
             border: 1px solid #ccc;
             padding: 20px;
@@ -93,3 +95,5 @@ Task 2: using CSS
         }
 
 ```
+
+Refer to ```https://www.w3schools.com/html/html_css.asp, https://www.w3schools.com/cssref/css_selectors.php```
