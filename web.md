@@ -42,6 +42,7 @@ Task 1: create a simple html page for the login interface, which will have:
     ```
 
 ==============================
+
 Task 2: using CSS to make the "logins.html" interface looks better.
 
 - 1), using "inline CSS" to change the font color of Menu "home" to Green
