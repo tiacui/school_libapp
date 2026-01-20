@@ -98,3 +98,10 @@ Task 2: using CSS to make the "logins.html" interface looks better.
 ```
 
 Refer to ```https://www.w3schools.com/html/html_css.asp, https://www.w3schools.com/cssref/css_selectors.php```
+
+- 3), once "logins.html" is ready, duplicate it to a new file "books.html" (where a user can view a list of files)
+- 4), in "books.html", remove the "<div>" element and add a new "<div>" element which will be used to list all the books.
+- 5), in the new "<div>", create a table to show the following:
+  - table field names "book_id", "name", "author", "stock"
+  - a phseudo book as ```111111, hello book, john doe, 5``` (as a place holder)
+-6), refer to the examples in ```https://www.w3schools.com/css/css_table.asp``` to make the table looks pretty.
