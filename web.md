@@ -128,6 +128,6 @@ if __name__ == '__main__':
 ```
 - read the code above, to understand it
 - read the sections ```Routing``` to understand how to use ```Routing```
-- do google search to find out how Flask receive parameter from a ```GET``` http request
+- do google search to find out how Flask receive parameter from a ```GET method``` http request
 - create a new Route (URL path) and corresponding function, in the function, read the parameters passed from browser (i.e. ```username``` and ```password```), display it in the response (so we know this part works)
 - since the webserver can receive username/password, call the function ```user_login()``` previously created, verify the username/password, and display "hello, you are logged in as XXXX" to the browser.
