@@ -105,3 +105,29 @@ Refer to ```https://www.w3schools.com/html/html_css.asp, https://www.w3schools.c
   - table field names "book_id", "name", "author", "stock"
   - a phseudo book as ```111111, hello book, john doe, 5``` (as a place holder)
 -6), refer to the examples in ```https://www.w3schools.com/css/css_table.asp```, using "inline CSS" to make the table looks pretty.
+
+
+==============================
+
+Task 3: using ```flask``` module to run a web server (Flask Documentation: ```https://flask.palletsprojects.com/en/stable/quickstart/```)
+
+- use pip to install ```flask``` module if not yet
+- a sample code to run flask web server like below (save it to webserver.py, and run ```python webserver.py```):
+
+```
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+```
+- read the code above, to understand it
+- read the sections ```Routing``` to understand how to use ```Routing```
+- do google search to find out how Flask receive parameter from a ```GET``` http request
+- create a new Route (URL path) and corresponding function, in the function, read the parameters passed from browser (i.e. ```username``` and ```password```), display it in the response (so we know this part works)
+- since the webserver can receive username/password, call the function ```user_login()``` previously created, verify the username/password, and display "hello, you are logged in as XXXX" to the browser.
