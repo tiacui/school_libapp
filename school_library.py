@@ -10,27 +10,30 @@ def log(name, message):
         logfile.write(cur_time + " " + name + " " + message + "\n")
 
 
-def user_login():
+def user_login(username=None, password=None):
     file = "config/credentials.txt"
     
-    while True:
+    if username == None and password == None:
         username = input("username: ")
         password = input("password: ")
 
-        with open(file, "r") as filedata:
-            for line in filedata.readlines():
-                line = line.strip()
+    with open(file, "r") as filedata:
+        for line in filedata.readlines():
+            line = line.strip()
 
-                user_and_password = line.split(":")
+            user_and_password = line.split(":")
 
-                username123 = user_and_password[0]
-                password123 = user_and_password[1]
+            username123 = user_and_password[0]
+            password123 = user_and_password[1]
 
-                if username == username123 and password == password123:
-                    print("login successful")
-                    log(username, "success")
-                    return username
-        log(username, "fail")
+            if username == username123 and password == password123:
+                print("login successful")
+                log(username, "success")
+                return username
+            
+    log(username, "fail")
+    return None
+
 
 
 class SchoolLibrary:
@@ -109,5 +112,13 @@ class SchoolLibrary:
                         print("--------------------------------")
 
 
+def main():
+    #u = user_login(username="admin", password="123")
+    u = user_login()
+    print(u)
+
+
+if __name__ == "__main__":
+    main()
 
                 
