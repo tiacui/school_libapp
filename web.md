@@ -133,5 +133,16 @@ if __name__ == '__main__':
 - read the sections ```Routing``` to understand how to use ```Routing```
 - do google search to find out how Flask receive parameter from a ```GET method``` http request
 - create a new Route (URL path) and corresponding function, in the function, read the parameters passed from browser (i.e. ```username``` and ```password```), display it in the response (so we know this part works)
-- since the webserver can receive username/password, call the function ```user_login()``` previously created, verify the username/password, and display "hello, you are logged in as XXXX" to the browser.
->>>>>>> da6643f1135280250382ddeba4ee7b60f46bf4c6
+
+==============================
+
+Task 4: Integrate the login interface with function ```user_login()```
+
+- To make it easier, remove the ```while True:``` from ```user_login()```, and test it to make sure it works as expected
+- the goal is to make a little modification to the ```user_login()``` function, and make it can work with both scenarios (authentication from Web and from CLI)
+- Refer to ```Default Parameter Values (https://www.w3schools.com/python/python_arguments.asp)```, modify the ```user_login()``` function, so that:
+  - when login from web, the parameters ```username```, ```parameter``` can be passed via ```user_login()``` parameters
+  - when login from CLI, it will ask user to input ```username``` and ```parameter``` using ```input()``` function
+- once it works expected, call the ```user_login()``` from the section ```@app.route("/login")``` to validate the username/password provided via Web interface
+- 
+
