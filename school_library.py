@@ -53,14 +53,15 @@ class SchoolLibrary:
             json.dump(self.books, loaddata)
             print("data saved")
 
-    def list_books(self, username):
+    def list_books(self, username, format=None):
         print("listing books")
         print("book_id     author     name      stocks")
         log(username, "is listing books")
-        for book in self.books:
-
-            print(book['book_id'], "    ",book['author'], "    ", book['name'], "    ", book['stock'])
-            print()
+        if format == None:
+            for book in self.books:
+                print(book['book_id'], "    ", book['author'], "    ", book['name'], "    ", book['stock'])
+        else:
+            return self.books
 
     
     def add_book(self, username):
@@ -113,9 +114,10 @@ class SchoolLibrary:
 
 
 def main():
-    #u = user_login(username="admin", password="123")
-    u = user_login()
-    print(u)
+    lib = SchoolLibrary("My Library")
+    lib.load_data()
+    aaa = lib.list_books("admin", format=1)
+    print(aaa)
 
 
 if __name__ == "__main__":
