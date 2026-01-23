@@ -144,5 +144,18 @@ Task 4: Integrate the login interface with function ```user_login()```
   - when login from web, the parameters ```username```, ```parameter``` can be passed via ```user_login()``` parameters
   - when login from CLI, it will ask user to input ```username``` and ```parameter``` using ```input()``` function
 - once it works expected, call the ```user_login()``` from the section ```@app.route("/login")``` to validate the username/password provided via Web interface
-- 
+
+=================================
+
+Task 5: display the list of books when user logged in successfully
+
+- When a user logged successfully, can call function ```list_books()``` to list all the books
+  - the current function ```list_books()``` will only print the books using ```print()```, which is not ideal. we need it to return a list of books.
+  - so: modify the function ```list_books()``` a little bit, to make it can work both scenarios, i.e.
+    - when calling from CLI, keep it as is
+    - when calling from web, return ```a list of books```
+    - test it first, make sure it works
+
+- it should load the template ```books.html```, and pass the "list (of books)" to the template, and display
+  - refer to: ```Rendering Templates``` in ```https://flask.palletsprojects.com/en/stable/quickstart/```, ```https://blog.miguelgrinberg.com/post/beautiful-interactive-tables-for-your-flask-templates```
 
