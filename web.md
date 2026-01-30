@@ -159,3 +159,13 @@ Task 5: display the list of books when user logged in successfully
 - it should load the template ```books.html```, and pass the "list (of books)" to the template, and display
   - refer to: ```Rendering Templates``` in ```https://flask.palletsprojects.com/en/stable/quickstart/```, ```https://blog.miguelgrinberg.com/post/beautiful-interactive-tables-for-your-flask-templates```
 
+
+
+=================================
+
+Task 6: Javascript
+
+- what is javascript:
+  - HTML is static
+  - JavaScript is a programming language, and makes web pages interactive, and can do stuff
+  - it supports stuff similiar to python, e.g. ```for/while loop```, ```if condition```, ```functions```, ..., -> ```https://www.w3schools.com/js/default.asp```
