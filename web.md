@@ -193,3 +193,9 @@ Task 6: Javascript
   - inline (attribute ``` on***="[code here]"```)
   - internal: using ```<script>[code here]</script>```
   - external: using ```<script src='[path]/filename.js'></script>```
+
+- the most important part is, how to get the DOM object in the HTML
+  - commonly used: ```document.getElementById(), document.getElementByTagName()```
+
+- practice:
+  - refer to the example below, ```https://www.w3schools.com/js/js_validation.asp```, to make sure username/password are provided in ```logins.html```
