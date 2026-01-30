@@ -169,3 +169,27 @@ Task 6: Javascript
   - HTML is static
   - JavaScript is a programming language, and makes web pages interactive, and can do stuff
   - it supports stuff similiar to python, e.g. ```for/while loop```, ```if condition```, ```functions```, ..., -> ```https://www.w3schools.com/js/default.asp```
+  - ** it is mainly used for web pages, and on client(browser) side, i.e. not server side
+
+- JavaScript HTML DOM(Document Object Model ): that's how javascript access HTML
+  - ```https://www.w3schools.com/js/js_htmldom.asp```
+  - save the following code to ```x1.html```:
+    ```
+      <!DOCTYPE html>
+      <html>
+      <body>
+      
+      <p id="demo">hello</p>
+
+      
+      </body>
+      </html> 
+    ```
+  - open it with chrome, right click then ```Inspect``` -> ```Console```, here you can access interact with DOM easily.
+    - try the code from ```https://www.w3schools.com/html/html_scripts.asp``` like:
+      - ```document.getElementById("demo") = .innerHTML = "Hello JavaScript!";```
+
+- 3 ways javascript can be integrated to HTML file (similar to CSS):
+  - inline (attribute ``` on***="[code here]"```)
+  - internal: using ```<script>[code here]</script>```
+  - external: using ```<script src='[path]/filename.js'></script>```
